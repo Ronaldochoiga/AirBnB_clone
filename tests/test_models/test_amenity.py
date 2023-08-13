@@ -21,7 +21,7 @@ class TestAmenityDocs(unittest.TestCase):
         cls.amenity_f = inspect.getmembers(Amenity, inspect.isfunction)
 
     def test_pep8_conformance_amenity(self):
-        """Test that models/amenity.py conforms to pep8."""
+        """Test that amenity.py conforms to pep8."""
         pep8s = pycodestyle.StyleGuide(quiet=True)
         result = pep8s.check_files(['models/amenity.py'])
         self.assertEqual(result.total_errors, 0,
