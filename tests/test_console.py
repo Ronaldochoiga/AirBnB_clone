@@ -61,7 +61,7 @@ class TestBase(unittest.TestCase):
         self.assertIsNotNone(HBNBCommand.count_class.__doc__)
         self.assertIsNotNone(HBNBCommand.default.__doc__)
 
-<<<<<<< HEAD
+
     def test_doc_class(self):
         """class documentation for the class"""
         doc = Console.__doc__
@@ -100,7 +100,7 @@ class TestFeatures(unittest.TestCase):
     """Class for testing Console Features"""
     def test_create(self):
         self.assertIsInstance()
-=======
+
     def test_3_file_HBNBCommand_task_0(self):
         with patch('sys.stdout', new=StringIO()) as f:
             HBNBCommand().onecmd("help quit")
